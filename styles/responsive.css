@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .grid-container {
     grid-template-columns: 1fr;
     max-width: 100%;
@@ -7,7 +7,7 @@
   }
 }
 
-@media (min-width: 640px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 1023px) {
   .grid-container {
     grid-template-columns: repeat(2, 200px);
     max-width: 440px;

@@ -28,11 +28,11 @@ header {
   top: 200px;
 }
 
-.img1, .img2, .img3, .img4 {
+.img {
   margin: auto;
 }
 
-.img1 img, .img2 img, .img3 img, .img4 img {
+.img img {
   width: 200px;
   height: 150px;
   border-radius: 5px;

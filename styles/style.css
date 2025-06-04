@@ -1,12 +1,13 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #eaeaea;
+  margin: 0;
 }
 
 p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 24px;
   font-weight: bold;
-  opacity: 20%;
+  opacity: 50%;
   display: flex;
   justify-content: center;
 }
@@ -17,15 +18,12 @@ header {
   font-weight: bold;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 
 
 .grid-container {
   display: grid;
   justify-content: center;
-  position: relative;
-  top: 200px;
 }
 
 .img {
@@ -33,7 +31,49 @@ header {
 }
 
 .img img {
-  width: 200px;
+  width: 225px;
   height: 150px;
   border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  color: black  ;
+}
+
+.footer p {
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration-line: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.desc {
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  margin: auto;
+  padding: 0;
+  text-align: center;
 }

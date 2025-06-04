@@ -13,6 +13,14 @@ window.addEventListener('load', () => {
     img.addEventListener('mouseleave', () => {
       img.src = originalSrc;
     });
+
+    img.addEventListener('focusin', (event) => {
+      img.src = hoverSrc;
+    });
+
+    img.addEventListener('focusout', (event) => {
+      img.src = originalSrc;
+    });
   });
 
 });

@@ -2,43 +2,84 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
-  <link rel="stylesheet" href="./styles/responsive.css" />
-  <link rel="stylesheet" href="./styles/style.css">
-  <script src="./script/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Image grid showcasing Cathedral High School in Boston, featuring images of the school and Fenway Park.">
+    <meta name="keywords" content="Cathedral High School, Boston, image grid, Fenway Park, school images">
+    <title>Test</title>
+    <link rel="stylesheet" href="./styles/responsive.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <script src="./script/script.js" async defer></script>
 </head>
 
 <body>
-  <header>Cathedral High School in Boston</header>
-  <p>image-grid</p>
-  <div class="grid-container">
-    <div class="img"><img src="./images/boston_college_high_school_photo_june_2021.jpeg"
-        data-hover="./images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122.jpg"></div>
-    <div class="img"><img src="./images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122.jpg"
-        data-hover="./images/Fenway-3-1400x934.jpg"></div>
-    <div class="img"><img src="./images/Cathedral_High_School_-_Boston.jpg" data-hover="./images/Fenway-3-1400x934.jpg">
+    <header>
+        <h1 id="main-title">Cathedral High School in Boston</h1>
+    </header>
+    <p id="grid-desc">Image grid of Cathedral High School and Fenway Park in Boston. Hover over images to see alternate views.</p>
+    <div class="grid-container" role="list" aria-labelledby="main-title" aria-describedby="grid-desc">
+        <div class="img" role="listitem">
+            <img src="images/boston_college_high_school_photo_june_2021.webp"
+                data-hover="images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122_1.webp"
+                alt="Boston College High School, June 2021. Hover to see Cathedral High School exterior." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122_1.webp"
+                data-hover="images/Cathedral_High_School_-_Boston_1.webp"
+                alt="Cathedral High School exterior. Hover to see Fenway Park." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Cathedral_High_School_-_Boston_1.webp"
+                data-hover="images/Fenway-3-1400x934_1.webp"
+                alt="Cathedral High School in Boston. Hover to see Fenway Park." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Fenway-3-1400x934_1.webp"
+                data-hover="images/boston_college_high_school_photo_june_2021.webp"
+                alt="Fenway Park. Hover to see Boston College High School." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/boston_college_high_school_photo_june_2021.webp"
+                data-hover="images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122_1.webp"
+                alt="Boston College High School, June 2021. Hover to see Cathedral High School exterior." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122_1.webp"
+                data-hover="images/Cathedral_High_School_-_Boston_1.webp"
+                alt="Cathedral High School exterior. Hover to see Fenway Park." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Cathedral_High_School_-_Boston_1.webp"
+                data-hover="images/Fenway-3-1400x934_1.webp"
+                alt="Cathedral High School in Boston. Hover to see Fenway Park." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Fenway-3-1400x934_1.webp"
+                data-hover="images/boston_college_high_school_photo_june_2021.webp"
+                alt="Fenway Park. Hover to see Boston College High School." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/boston_college_high_school_photo_june_2021.webp"
+                data-hover="images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122_1.webp"
+                alt="Boston College High School, June 2021. Hover to see Cathedral High School exterior." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122_1.webp"
+                data-hover="images/Cathedral_High_School_-_Boston_1.webp"
+                alt="Cathedral High School exterior. Hover to see Fenway Park." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Cathedral_High_School_-_Boston_1.webp"
+                data-hover="images/Fenway-3-1400x934_1.webp"
+                alt="Cathedral High School in Boston. Hover to see Fenway Park." tabindex="0">
+        </div>
+        <div class="img" role="listitem">
+            <img src="images/Fenway-3-1400x934_1.webp"
+                data-hover="images/boston_college_high_school_photo_june_2021.webp"
+                alt="Fenway Park. Hover to see Boston College High School." tabindex="0">
+        </div>
+        
     </div>
-    <div class="img"><img src="./images/Fenway-3-1400x934.jpg"
-        data-hover="./images/boston_college_high_school_photo_june_2021.jpeg"></div>
-    <div class="img"><img src="./images/boston_college_high_school_photo_june_2021.jpeg"
-        data-hover="./images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122.jpg"></div>
-    <div class="img"><img src="./images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122.jpg"
-        data-hover="./images/Cathedral_High_School_-_Boston.jpg"></div>
-    <div class="img"><img src="./images/Cathedral_High_School_-_Boston.jpg" data-hover="./images/Fenway-3-1400x934.jpg">
-    </div>
-    <div class="img"><img src="./images/Fenway-3-1400x934.jpg"
-        data-hover="./images/boston_college_high_school_photo_june_2021.jpeg"></div>
-    <div class="img"><img src="./images/boston_college_high_school_photo_june_2021.jpeg"
-        data-hover="./images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122.jpg"></div>
-    <div class="img"><img src="./images/Cathedral-High-School-24vi3t5e471cowgkkkkccg8oc-1122.jpg"
-        data-hover="./images/Cathedral_High_School_-_Boston.jpg"></div>
-    <div class="img"><img src="./images/Cathedral_High_School_-_Boston.jpg" data-hover="./images/Fenway-3-1400x934.jpg">
-    </div>
-    <div class="img"><img src="./images/Fenway-3-1400x934.jpg"
-        data-hover="./images/boston_college_high_school_photo_june_2021.jpeg"></div>
-  </div>
 </body>
-
 </html>

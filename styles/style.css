@@ -24,9 +24,6 @@ header {
 .grid-container {
   display: grid;
   justify-content: center;
-  position: relative;
-  top: 200px;
-  margin: auto;
 }
 
 .img {

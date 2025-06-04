@@ -1,14 +1,18 @@
-const images = document.querySelectorAll('img[data-hover]');
+window.addEventListener('onload', () => {
 
-images.forEach(img => {
-  const originalSrc = img.src;
-  const hoverSrc = img.getAttribute('data-hover');
+  const images = document.querySelectorAll('img[data-hover]');
 
-  img.addEventListener('mouseenter', () => {
-    img.src = hoverSrc;
+  images.forEach(img => {
+    const originalSrc = img.src;
+    const hoverSrc = img.getAttribute('data-hover');
+
+    img.addEventListener('mouseenter', () => {
+      img.src = hoverSrc;
+    });
+
+    img.addEventListener('mouseleave', () => {
+      img.src = originalSrc;
+    });
   });
 
-  img.addEventListener('mouseleave', () => {
-    img.src = originalSrc;
-  });
 });

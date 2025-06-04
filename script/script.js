@@ -1,4 +1,4 @@
-window.addEventListener('onload', () => {
+window.addEventListener('load', () => {
 
   const images = document.querySelectorAll('img[data-hover]');
 

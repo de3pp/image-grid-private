@@ -37,15 +37,16 @@
   article {
     width: 960px;
     margin: auto;
-    
+
   }
+
   .grid-container {
     grid-template-columns: repeat(4, 225px);
     grid-template-rows: auto;
     gap: 20px 20px;
   }
+
   .footer {
     width: 960px;
   }
 }
-

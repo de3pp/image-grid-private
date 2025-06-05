@@ -34,21 +34,18 @@
 
 
 @media (min-width: 1024px) {
+  article {
+    width: 960px;
+    margin: auto;
+    
+  }
   .grid-container {
     grid-template-columns: repeat(4, 225px);
     grid-template-rows: auto;
     gap: 20px 20px;
   }
-
-  .desc {
-    width: 960px;
-  }
-
-  header {
-    width: 960px;
-  }
-
   .footer {
     width: 960px;
   }
 }
+

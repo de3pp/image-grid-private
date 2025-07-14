@@ -1,25 +1,56 @@
 window.addEventListener('load', () => {
+  const pictures = document.querySelectorAll('picture[data-hover]');
 
-  const images = document.querySelectorAll('img[data-hover]');
+  pictures.forEach(picture => {
+    const img = picture.querySelector('img');
+    const originalSrc = img.getAttribute('src');
+    const hoverSrc = picture.getAttribute('data-hover');
+    const sources = picture.querySelectorAll('source');
+    const originalSrcsets = [];
+    const hoverSrcsets = [];
+    const source = sources[0];
 
-  images.forEach(img => {
-    const originalSrc = img.src;
-    const hoverSrc = img.getAttribute('data-hover');
-
-    img.addEventListener('mouseenter', () => {
-      img.src = hoverSrc;
+    sources.forEach((source, index) => {
+      originalSrcsets.push(source.getAttribute('srcset'));
+      hoverSrcsets.push(source.getAttribute('data-hover'));
     });
 
-    img.addEventListener('mouseleave', () => {
-      img.src = originalSrc;
+
+
+    picture.addEventListener('mouseenter', () => {
+      img.setAttribute('src', hoverSrc);
+      sources.forEach((source, index) => {
+        if (hoverSrcsets[index]) {
+          source.setAttribute('srcset', hoverSrcsets[index]);
+        }
+      });
     });
 
-    img.addEventListener('focusin', (event) => {
-      img.src = hoverSrc;
+    picture.addEventListener('mouseleave', () => {
+      img.setAttribute('src', originalSrc);
+      sources.forEach((source, index) => {
+        if (originalSrcsets[index]) {
+          source.setAttribute('srcset', originalSrcsets[index]);
+        }
+      });
     });
 
-    img.addEventListener('focusout', (event) => {
-      img.src = originalSrc;
+    picture.addEventListener('focusin', () => {
+      img.setAttribute('src', hoverSrc);
+      sources.forEach((source, index) => {
+        if (hoverSrcsets[index]) {
+          source.setAttribute('srcset', hoverSrcsets[index]);
+        }
+      });
+    });
+
+    picture.addEventListener('focusout', () => {
+      img.setAttribute('src', originalSrc);
+      sources.forEach((source, index) => {
+        if (originalSrcsets[index]) {
+          source.setAttribute('srcset', originalSrcsets[index]);
+        }
+      });
     });
   });
 
@@ -31,7 +62,7 @@ window.addEventListener('load', () => {
       dateElement.dateTime = dateTime.toISOString();
       dateElement.textContent = dateTime.toLocaleDateString() + ' ' + dateTime.toLocaleTimeString();
     }, 500);
-  };
+  }
 
 
   const lightThemeToggle = document.getElementById('light');
